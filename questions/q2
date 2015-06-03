@@ -1,0 +1,4 @@
+Write a program that takes as input two integers n and m and prints the multiplication
+table of n and m upto 10 side by side separated by a tab character. What is the escape sequence
+for tab character ? You can find it out using the command man ascii on the terminal. Here is a
+sample interaction of the program.

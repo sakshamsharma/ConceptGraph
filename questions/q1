@@ -1,0 +1,4 @@
+ Write a program that takes as input two integers n and m and a third integer
+l that is the length of the table. The program should then print the multiplication table of n and m
+starting from l down to 1, side by side separated by a tab character. Here is a sample interaction of the
+program.

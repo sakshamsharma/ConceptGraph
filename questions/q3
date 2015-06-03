@@ -1,0 +1,3 @@
+Write a program that takes as input two integers n and m and prints the multiplication
+table of n upto m in reverse order. i.e. the multiplication table starts with n x m = n . m till
+n x 1 = n. Here is a sample interaction of the program
