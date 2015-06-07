@@ -7,7 +7,7 @@ if len(sys.argv) == 1:
     print("No files provided.")
     exit()
 
-ConceptList = [Concept("Conditionals"), Concept("Loop"), Concept("Display")]
+ConceptList = [Concept("Conditionals"), Concept("Loop"), Concept("Display"), Concept("Custom")]
 
 for filename in sys.argv[1:]:
     relations = set()
