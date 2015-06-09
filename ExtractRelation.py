@@ -15,6 +15,13 @@ for filename in sys.argv[1:]:
     text = f.read()
 
     for concept in ConceptList:
+        isUnmatched = 0
+        for unmatcher in concept.unmatchers:
+            if re.search(unmatcher, text):
+                isUnmatched = 1
+                break
+        if isUnmatched:
+            continue
         for regex in concept.regex:
             if re.search(regex, text):
                 relations.add(concept.name)
