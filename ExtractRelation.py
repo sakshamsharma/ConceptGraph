@@ -1,4 +1,5 @@
 import sys
+import subprocess
 import re
 
 from Concept import *
@@ -7,7 +8,10 @@ if len(sys.argv) == 1:
     print("No files provided.")
     exit()
 
-ConceptList = [Concept("Conditionals"), Concept("Loop"), Concept("Display"), Concept("Custom")]
+conceptsInDir = subprocess.getoutput('ls data').split('\n')
+ConceptList = []
+for concept in conceptsInDir:
+    ConceptList.append(Concept(concept))
 
 for filename in sys.argv[1:]:
     relations = set()
