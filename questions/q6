@@ -1,0 +1,11 @@
+Write a function to recursively compute the sum of digits of a positive
+integer. Please note that the function has to be recursive. Implement the
+following function:
+	int sum(int n) where n is the number
+
+Next write a function that utilizes the above function to repeatedly compute
+the sum of digits till the sum becomes a single-digit number. You can use
+recursion again if you want. Output each intermediate sum and the final sum.
+
+For example, for the input 98895, the successive outputs are 39 (9 + 8 + 8 + 9
++ 5), 12 (3 + 9) and 3 (1 + 2). For the input 34, the only output is 7 (3 + 4).
